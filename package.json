@@ -1,0 +1,16 @@
+{
+  "name": "lambda-calculator",
+  "version": "0.1.0",
+  "description": "Parsing et reduction tool for lambda-calculus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "parser",
+    "lambda",
+    "calculus"
+  ],
+  "author": "Nicolas CHAVATTE (nchavatte@gmail.com)",
+  "license": "ISC"
+}
