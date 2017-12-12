@@ -4,7 +4,7 @@
   "description": "Parsing et reduction tool for lambda-calculus",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha **/*.spec.js"
   },
   "keywords": [
     "parser",
