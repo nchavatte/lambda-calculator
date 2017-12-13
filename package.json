@@ -4,6 +4,7 @@
   "description": "Parsing et reduction tool for lambda-calculus",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "./node_modules/.bin/mocha **/*.spec.js"
   },
   "keywords": [
@@ -18,6 +19,6 @@
     "mocha": "^4.0.1"
   },
   "dependencies": {
-    "parsing": "^1.5.0"
+    "prettybnf": "^0.1.3"
   }
 }
