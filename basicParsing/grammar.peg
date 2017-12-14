@@ -1,0 +1,27 @@
+start = term
+
+term =
+    ab:abstraction { return ab; } /
+    ap:application { return ap; } /
+    br:bracketed { return br; } /
+    id:identifier { return { type: "atomic", value: id }; }
+
+abstraction = arg:identifier "=>" bo:term {
+    return {
+        type: "abstraction",
+        argument: arg,
+        body: bo
+    };
+}
+
+application = func:bracketed arg:term {
+    return {
+        type: "application",
+        function: func,
+        argument: arg
+    };
+}
+
+bracketed = "(" interior:term ")" { return interior }
+
+identifier = [a-z]+
