@@ -36,7 +36,7 @@ describe("stringifier", function () {
                 value: ["b"]
             }
         };
-        var actualResult = stringify(applicationTerm);
+        var actualResult = stringify(abstractionTerm);
         expect(actualResult).to.equal("a => b");
     });
 });
