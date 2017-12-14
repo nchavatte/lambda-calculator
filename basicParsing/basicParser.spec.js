@@ -19,7 +19,10 @@ describe("basicParser", function () {
                 "body": {
                     "type": "abstraction",
                     "argument": ["a", "b"],
-                    "body": ["a"]
+                    "body": {
+                        "type": "atomic",
+                        "value": ["a"]
+                    }
                 }
             });
         });

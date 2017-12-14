@@ -4,7 +4,7 @@ term =
     ab:abstraction { return ab; } /
     ap:application { return ap; } /
     br:bracketed { return br; } /
-    id:identifier { return id; }
+    id:identifier { return { type: "atomic", value: id }; }
 
 abstraction = arg:identifier "=>" bo:term {
     return {
