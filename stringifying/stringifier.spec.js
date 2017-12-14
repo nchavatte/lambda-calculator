@@ -26,4 +26,17 @@ describe("stringifier", function () {
         var actualResult = stringify(applicationTerm);
         expect(actualResult).to.equal("(a) b");
     });
+    
+    it("returns right string for abstraction term", function () {
+        var abstractionTerm = {
+            type: "abstraction",
+            argument: ["a"],
+            body: {
+                type: "atomic",
+                value: ["b"]
+            }
+        };
+        var actualResult = stringify(applicationTerm);
+        expect(actualResult).to.equal("a => b");
+    });
 });
