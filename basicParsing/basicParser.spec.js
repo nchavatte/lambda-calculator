@@ -1,4 +1,4 @@
-var basicParser = require("./basicParser").basicParser;
+var basicParser = require("./basicParser");
 var expect = require("chai").expect;
 
 describe("basicParser", function () {
