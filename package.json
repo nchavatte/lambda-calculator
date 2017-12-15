@@ -2,6 +2,10 @@
   "name": "lambda-calculator",
   "version": "0.1.0",
   "description": "Parsing et reduction tool for lambda-calculus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nchavatte/lambda-calculator.git"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
