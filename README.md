@@ -8,8 +8,6 @@
 $ npm install lambda-calculator
 ```
 
-**/!\ NPM package is not published yet !**
-
 ### Use API in your JS project
 
 ```javascript
